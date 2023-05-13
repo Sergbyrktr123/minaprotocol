@@ -1,0 +1,211 @@
+body{
+    font-family: "Monument Grotesk, serif";
+    box-sizing: border-box;
+   
+}
+#menu1 a:hover{
+    color: orange;
+   
+}
+#menu1 #buton{
+    overflow: hidden;
+    font-size: small;
+    background-color: #ff603b;
+    width: 200px;
+    box-shadow: 5px 5px #ff603b;
+  
+}
+#menu1 #buton:hover{
+    background-color: rgb(24, 4, 4);
+    box-shadow: none;
+}
+#containe2{
+    margin-top: 100px;
+}
+#containe2  #paragraf{
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 100px;
+}
+#containe2 a{
+    font-family: "Monument Grotesk, serif";
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13rem;
+    height: 3.25rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 4px 1px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    transform-style: preserve-3d;
+    transition: background .2s ease-out 0ms;
+    color: #2d2d2d;
+    padding: 0 1rem;
+    text-align: left;
+    box-shadow: 5px 5px gray;
+}
+#containe2 a:hover{
+    background-color: purple;
+    box-shadow:none;
+}
+#containe2 .btn3{
+    background-color: #ff603b;
+    cursor: pointer;
+     width: 120px; 
+     height: 60px;
+     box-shadow: 5px 5px gray;
+}
+#containe2 .btn3:hover{
+    background-color: #000;
+    box-shadow: none;
+    color: white;
+}
+#container3 .btn4{
+    cursor: pointer; 
+    background-color: #ff603b;
+     box-shadow: 5px 5px gray;
+}
+#container3 .btn4:hover{
+    box-shadow: none;
+    background-color: black;
+    color: white;
+}
+.drop{
+    font-size: large;
+    width: 300px;
+    padding: 15px;
+    background-color: #000;
+   
+}
+.drop a{
+    color: white;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    
+    
+}
+.drop a:hover{
+    color: orange;
+   
+}
+.icon{
+    position: absolute;
+    right: 5px;
+    width: 40px;
+}
+.btna{
+    width: 122px;
+    background-color: #ff603b;
+    color: #fff;
+    border-radius: 4px 1px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    position: relative;
+    height: 40px;
+    transform-style: preserve-3d;
+    transition: background .2s ease-out 0ms;
+    display: block;
+    text-decoration: none;
+    box-shadow: 5px 5px black;
+}
+.btna:hover{
+    box-shadow: none;
+    background-color: #000;
+    color: white;
+}
+.linkbtn {
+    text-decoration: none;
+    color: orange;
+    margin: 40px 0px 40px 0px;
+}
+.linkbtn:hover{
+    color: white;
+    background-color: #000;
+    padding: 15px;
+    transition: all .2s ease;
+}
+.btnblak{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 5px gray;
+}
+#openmenu{
+    display: none;
+}
+#menu{
+    display: none;
+    width: 95%;
+    height: 480px;
+    background-color: #000;
+    z-index: 1;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+   
+}
+    .btnhr{
+        border-bottom:1px solid gray ;
+        height: 80px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    #opendev{
+        display: none;
+    }
+
+  
+  @keyframes slide-down {
+    from {
+      transform: translateY(-150%); /* Menüyü ekranın dışına taşıyoruz */
+    }
+    to {
+      transform: translateY(0); /* Menüyü ekranın üst kısmına getiriyoruz */
+    }
+  }
+  @keyframes slide-up {
+    from {
+      transform: translateY(0); /* Menüyü ekranın dışına taşıyoruz */
+    }
+    to {
+      transform: translateY(-150%);    
+      /* Me
+      nüyü ekranın üst kısmına getiriyoruz */
+    }
+  }
+.btnblak:hover{
+    box-shadow: none;
+    transform: translateZ(-1px);
+    transition: transform .2s ease-in 0ms, border 50ms ease-in .1s;
+    inset: 0.25rem -0.25rem -0.25rem 0.25rem;
+    background-color: #000;
+}
+@media  screen and (max-width: 1100px) {
+    .menu2{
+        display: none;
+       
+    }
+    #menu{
+        display: none; /* Menü açıkken görünür hale getiriyoruz */
+        background: #2d2d2d none repeat scroll 0 0;
+        
+    }
+    #openmenu{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        top: 80px;
+    }
+}
